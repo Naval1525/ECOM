@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/naval1525/ECOM/internal/model"
-	"github.com/naval1525/ECOM/internal/repository"
+	"github.com/naval1525/Social_Media_Backend/internal/model"
+	"github.com/naval1525/Social_Media_Backend/internal/repository"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -15,7 +15,7 @@ type userService struct {
 }
 
 // NewUserService create a new user service
-func NewUserService(userRepo repository.UserRepository, jwtSecret string) UserService {
+func NewUserService(userRepo repository.UserRepository, jwtSecret string) *userService {
 	return &userService{
 		userRepo:  userRepo,
 		jwtSecret: jwtSecret,

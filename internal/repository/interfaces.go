@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/docker/distribution/uuid"
-	"github.com/naval1525/ECOM/internal/model"
+	"github.com/naval1525/Social_Media_Backend/internal/model"
 )
 
 // UserRepository defines methods for user data operations
