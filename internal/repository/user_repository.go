@@ -7,7 +7,7 @@ import (
 
 	"time"
 
-	"github.com/docker/distribution/uuid"
+	"github.com/google/uuid"
 	"github.com/naval1525/Social_Media_Backend/internal/model"
 )
 
@@ -26,8 +26,8 @@ func (r *userRepository) Create(ctx context.Context, user *model.User) error {
 		INSERT INTO users (id, username, email, password_hash, full_name, bio, avatar, created_at, updated_at)
 		VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`
 
-	now := time.Now()
-	user.ID = uuid.Generate()
+    now := time.Now()
+    user.ID = uuid.New()
 	user.CreatedAt = now
 	user.UpdatedAt = now
 

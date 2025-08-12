@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"github.com/docker/distribution/uuid"
+	"github.com/google/uuid"
 )
 
 // Post represents a social media post

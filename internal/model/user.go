@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"github.com/docker/distribution/uuid"
+	"github.com/google/uuid"
 )
 
 // User represents a user in our social media platform

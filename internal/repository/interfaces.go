@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/docker/distribution/uuid"
+	"github.com/google/uuid"
 	"github.com/naval1525/Social_Media_Backend/internal/model"
 )
 
