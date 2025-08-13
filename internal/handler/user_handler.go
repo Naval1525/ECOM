@@ -14,7 +14,6 @@ type UserHandler struct {
 	userService service.UserService
 }
 
-// NewUserHandler creates a new user handler
 func NewUserHandler(userService service.UserService) *UserHandler {
 	return &UserHandler{
 		userService: userService,
